@@ -3,7 +3,7 @@ title: "Aktuelles"
 page: true
 menu:
   main:
-    name: "Home"
+    name: "News"
     weight: 3
 ---
 

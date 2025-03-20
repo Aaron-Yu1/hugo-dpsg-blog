@@ -1,0 +1,15 @@
+<div class="widget-qrcode widget">
+    <h4 class="widget__title">{{ T "qrcode_title" }}</h4>
+    <div class="widget__content">
+        <ul class="widget__list">
+            {{- range .Site.Params.qrcodes }}
+            <li class="widget__item">
+                <a class="widget-qrcode__link widget__link" href="{{ .url }}">
+                    <img class="widget-qrcode__image" src="{{ .image }}" alt="{{ .alt }}">
+                    <span class="widget-qrcode__text">{{ .text }}</span>
+                </a>
+            </li>
+            {{- end }}
+        </ul>
+    </div>
+</div>
